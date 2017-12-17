@@ -1,7 +1,11 @@
+$bp-small: 768;
+$bp-medium: 1024;
+$bp-large: 1600;
+
 $breakpoints: (
   small: 480px,
-  med: 640px,
-  large: 920px,
-  wide: 1200px,
-  mega: 1600px
+  medium: $bp-small * 1px,
+  large: $bp-medium * 1px,
+  wide: $bp-large * 1px,
+  mega: 2000px
 );

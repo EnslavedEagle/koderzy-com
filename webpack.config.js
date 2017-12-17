@@ -7,6 +7,7 @@ const extractSass = require('./config/plugin-extract-sass');
 const filesCopy = require('./config/plugin-copy');
 const imageminModule = require('./config/module-imagemin');
 const imageminPlugin = require('./config/plugin-imagemin');
+const cleanPlugin = require('./config/plugin-clean');
 
 const app = paths.src('app.js');
 const styles = paths.src('style.scss');
@@ -29,6 +30,7 @@ const webpackConfig = {
   plugins: [
     handlebars,
     extractSass,
+    cleanPlugin,
     filesCopy,
     imageminPlugin
   ]

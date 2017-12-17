@@ -1,0 +1,51 @@
+.section--home {
+  min-height: 100vh;
+
+  .section__inner {
+    min-height: 100vh;
+    border-bottom: 2px solid $color-primary;
+    padding-bottom: 5em;
+  }
+
+  .section__aside {
+    width: 200px;
+    border-right: 1px solid #d0d0d0;
+  }
+
+  .section__content {
+    width: 800px;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 0;
+    width: 95%;
+
+    .cta__information,
+    .cta__enroll {
+      padding: 0 .5em;
+
+      @include mq-medium {
+        padding: 0 2em;
+      }
+    }
+
+    @include mq-medium {
+      flex-direction: row;
+      
+      .cta__information,
+      .cta__enroll {
+        width: 50%;
+      }
+    }
+  }
+
+  .cta__list {
+    margin: 1.3em 0 0;
+  }
+
+  .cta__form {
+    margin: 1.1em auto 2em;
+  }
+}

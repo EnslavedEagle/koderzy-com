@@ -1,0 +1,23 @@
+@mixin mq-small {
+  @media (max-width: em($bp-small)) {
+    @content;
+  }
+}
+
+@mixin mq-medium {
+  @media (min-width: em($bp-small + 1)) {
+    @content;
+  }
+}
+
+@mixin mq-large {
+  @media (min-width: em($bp-medium + 1)) {
+    @content;
+  }
+}
+
+@mixin mq-wide {
+  @media (min-width: em($bp-large)) {
+    @content;
+  }
+}

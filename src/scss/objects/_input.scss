@@ -1,0 +1,54 @@
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+.input--text {
+  background: $color-secondary;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: .8em;
+  padding: .65em;
+  margin: .35em 0;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 4px #b3b3b3;
+  }
+}
+
+
+.button {
+  border: 0;
+  border-radius: .25em;
+  cursor: pointer;
+  font-family: $font-secondary;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5em .65em;
+  margin: .25em 0;
+
+  &:focus {
+    box-shadow: 0 0 4px #b3b3b3;
+  }
+}
+
+.button--big {
+  width: 100%;
+  padding: .75em 1em;
+}
+
+.button--accent {
+  background: $color-primary;
+  color: $color-secondary;
+
+  &:hover {
+    background: darken($color-primary, 10%);
+  }
+
+  &:focus {
+    background: darken($color-primary, 10%);
+    box-shadow: 0 0 4px $color-primary;
+  }
+}
