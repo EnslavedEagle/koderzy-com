@@ -1,0 +1,48 @@
+.section--founders {
+  .founder {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 700px;
+    margin: 2.5em auto;
+
+    &__photo {
+      min-width: 140px;
+    }
+
+    &__photo__img {
+      min-width: 140px;
+      box-sizing: border-box;
+    }
+
+    &__accent {
+      color: $color-primary;
+    }
+  }
+
+  @include section-padding;
+}
+
+@include mq_small {
+  .section--founders .founder {
+    &__photo__img {
+      display: block;
+      margin: 0 auto;
+      max-width: 160px;
+    }
+  }
+}
+
+@include mq_medium {
+  .section--founders .founder {
+    flex-direction: row;
+
+    &__photo {
+      min-width: 160px;
+    }
+
+    &__introduction {
+      padding-left: 2.5em;
+    }
+  }
+}

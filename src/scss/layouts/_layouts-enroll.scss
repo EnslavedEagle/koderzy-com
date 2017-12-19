@@ -1,0 +1,14 @@
+.section--enroll {
+  .enroll {
+    max-width: 600px;
+
+    &__lead {
+      margin: .125em 0;
+    }
+    &__before {
+      margin: .125em 0;
+    }
+  }
+
+  @include section-padding;
+}

@@ -1,0 +1,7 @@
+.site-footer {
+  background: #0f0f0f;
+  color: $color-secondary;
+  text-align: center;
+  
+  @include typi('footer');
+}

@@ -83,6 +83,27 @@
       border-radius: 0 0 2em 2em;
       padding: 1.5em 2em 2.5em;
     }
+
+    .cta__response {
+      font-size: .85em;
+      font-weight: bold;
+      margin: .25em 0 .75em;
+      text-align: center;
+
+      .errors {
+        font-size: .9em;
+        text-align: left;
+        padding-left: 1.25em;
+      }
+
+      &.error {
+        color: $color-primary;
+      }
+
+      &.success {
+        color: #55aa00;
+      }
+    }
   }
 
   @include section-border;

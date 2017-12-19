@@ -1,0 +1,29 @@
+.section--founders {
+  color: $color-secondary;
+
+  .founder {
+    font-size: .9em;
+
+    &__photo__img {
+      border: 9px solid $color-secondary;
+      border-radius: 1.4em;
+    }
+
+    &__introduction {
+      @include mq_small {
+        text-align: center;
+      }
+    }
+
+    &__title {
+      @include typi('founders-title');
+      font-weight: bold;
+    }
+
+    &__description {
+      @include typi('founders-description');
+    }
+  }
+
+  @include section-padding;
+}

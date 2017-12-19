@@ -23,9 +23,10 @@
           </div>
           <div class="cta__form__content">
             <form id="enroll">
-              <input type="name" name="text" id="enroll-name" class="cta__input input--text" placeholder="Imię">
-              <input type="email" name="email" id="enroll-email" class="cta__input input--text" placeholder="Email">
-              <button id="enrollBtn" class="button button--big button--accent">Zapisuję się</button>
+              <div id="enroll-response" class="cta__response"></div>
+              <input type="name" name="name" id="enroll-name" class="cta__input input--text" placeholder="Imię" pattern="[a-zA-Z0-9 -]+" required="required">
+              <input type="email" name="email" id="enroll-email" class="cta__input input--text" placeholder="Email" required="required">
+              <button id="enroll-submit" class="button button--big button--accent">Zapisuję się</button>
             </form>
           </div>
         </div>

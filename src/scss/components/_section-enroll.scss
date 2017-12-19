@@ -1,0 +1,36 @@
+.section--enroll {
+  background-image:
+    linear-gradient(to top, rgba(249, 50, 12, .8) 0%, rgba(249, 50, 12, .9) 100%), 
+    url('img/enroll-background.jpg');
+  background-position: center center, bottom center;
+  background-size: cover, cover;
+  color: $color-secondary;
+  text-align: center;
+
+  .enroll {
+    &__lead {
+      font-size: 1.8em;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+    &__before {
+      font-size: 1.2em;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.5em;
+    }
+
+    .button {
+      background: #000000;
+      color: $color-secondary;
+      font-size: 1.4em;
+      padding: .65em 3.3em;
+      margin: 1.5em 0 3em;
+      box-shadow: .5em .5em 100px rgba(0, 0, 0, 0.4);
+
+      &:hover {
+        background: #301414;
+      }
+    }
+  }
+}
