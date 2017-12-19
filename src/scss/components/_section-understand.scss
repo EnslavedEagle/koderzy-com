@@ -1,0 +1,12 @@
+.section--understand {
+  color: $color-secondary;
+  text-align: center;
+  
+  .understand__lead--big {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  @include typi('understand');
+  @include section-border;
+}

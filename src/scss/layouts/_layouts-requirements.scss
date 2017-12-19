@@ -1,0 +1,32 @@
+.section--requirements {
+  .section__inner {
+    margin: 0 auto;
+    
+    @include section-padding;
+  }
+
+  .requirements {
+    &__heading {
+      display: table;
+      max-width: 500px;
+      margin: 1.5em auto;
+    }
+
+    &__list {
+      line-height: 1.2em;
+      max-width: 600px;
+      margin: 1em auto 5em;
+
+      li {
+        margin: .75em .5em;
+      }
+    }
+
+    &__description {
+      text-align: center;
+      line-height: 1.5em;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

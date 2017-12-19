@@ -1,0 +1,12 @@
+.section--understand {
+  .section__inner {
+    margin: 0 auto;
+    
+    @include section-padding;
+  }
+
+  .understand {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

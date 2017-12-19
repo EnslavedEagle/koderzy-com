@@ -21,3 +21,18 @@
     @content;
   }
 }
+
+
+@mixin section-padding {
+  padding: 2em 0 3em;
+
+  @include mq-medium {
+    padding: 3em 0 4em;
+  }
+}
+
+@mixin section-border {
+  .section__inner {
+    border-bottom: 2px solid $color-primary;
+  }
+}
