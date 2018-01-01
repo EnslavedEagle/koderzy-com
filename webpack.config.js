@@ -5,8 +5,8 @@ const sass = require('./config/module-sass');
 const handlebars = require('./config/plugin-handlebars');
 const extractSass = require('./config/plugin-extract-sass');
 const filesCopy = require('./config/plugin-copy');
-const imageminModule = require('./config/module-imagemin');
-const imageminPlugin = require('./config/plugin-imagemin');
+// const imageminModule = require('./config/module-imagemin');
+// const imageminPlugin = require('./config/plugin-imagemin');
 const cleanPlugin = require('./config/plugin-clean');
 
 const app = paths.src('app.js');
@@ -23,16 +23,14 @@ const webpackConfig = {
   module: {
     rules: [
       babel,
-      sass,
-      imageminModule
+      sass
     ]
   },
   plugins: [
     handlebars,
     extractSass,
     cleanPlugin,
-    filesCopy,
-    imageminPlugin
+    filesCopy
   ]
 }
 

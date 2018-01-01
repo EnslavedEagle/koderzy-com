@@ -6,12 +6,8 @@
     max-width: 700px;
     margin: 2.5em auto;
 
-    &__photo {
-      min-width: 140px;
-    }
-
+    &__photo,
     &__photo__img {
-      min-width: 140px;
       box-sizing: border-box;
     }
 
@@ -25,10 +21,14 @@
 
 @include mq_small {
   .section--founders .founder {
+    &__photo,
+    &__photo__img {
+      width: 160px;
+    }
+
     &__photo__img {
       display: block;
       margin: 0 auto;
-      max-width: 160px;
     }
   }
 }
@@ -37,12 +37,16 @@
   .section--founders .founder {
     flex-direction: row;
 
-    &__photo {
-      min-width: 160px;
+    &__photo,
+    &__photo__img {
+      width: 170px;
+      min-width: 170px;
+      max-width: 170px;
     }
 
     &__introduction {
       padding-left: 2.5em;
+      flex-shrink: 2;
     }
   }
 }

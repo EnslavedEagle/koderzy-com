@@ -1,3 +1,4 @@
+const paths = require('./paths');
 const os = require('os');
 const { ImageminWebpackPlugin } = require('imagemin-webpack');
 const imageminGifsicle = require('imagemin-gifsicle');
@@ -22,13 +23,7 @@ const plugins = [
 ];
 
 module.exports = new ImageminWebpackPlugin({
-  bail: false,
-  excludeChunksAssets: false,
   imageminOptions: {
     plugins
-  },
-  manifest: imageminManifest,
-  maxConcurrency: os.cpus().length,
-  name: '[path][name].[ext]',
-  test: /\.(jpe?g|png|gif|svg)$/i
+  }
 });

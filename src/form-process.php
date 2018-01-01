@@ -1,5 +1,6 @@
 <?php
 $errors = array();
+$filename = '9f97259bfe2ec1126eb01f3b73ef1152.csv';
 
 $requiredFields = array('name', 'email');
 
@@ -14,7 +15,8 @@ if ($_POST && !$errors) {
   if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     $errors[] = 'Podany adres e-mail jest nieprawidłowy.';
   } else {
-    $csv = array_map('str_getcsv', file('saved-users.csv'));
+    $file = fopen($filename, 'a');
+    $csv = array_map('str_getcsv', file($filename));
 
     // Search for email
     foreach ($csv as $line) {
@@ -25,7 +27,6 @@ if ($_POST && !$errors) {
     }
 
     if (!$errors) {
-      $file = fopen('saved-users.csv', 'a');
       fputcsv($file, array($_POST['name'], $_POST['email']));
       fclose($file);
     }
